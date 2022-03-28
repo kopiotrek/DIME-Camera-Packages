@@ -1,5 +1,5 @@
 # Camera Packages - DIME
-This repository contains the setup instructions and links to for the all the camera packages for the official implementation of [DIME](https://arxiv.org/abs/2203.13251).
+This repository contains the setup instructions and links to for the all the camera packages for the official implementation of [DIME](https://arxiv.org/abs/2203.13251). The base repo containing all the information can be found at [DIME - Models](https://github.com/NYU-robot-learning/DIME-Models).
 
 ## Packages part of the Setup:
 We install two ROS packages to setup the camera module:

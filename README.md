@@ -13,10 +13,13 @@ We advise you to use the `setup.sh` script in this repository to install all the
 1. Use the following command to run the ROSLaunch file for a Intel Realsense camera:
     ```
     roslaunch realsense2_camera rs_camera.launch camera:=cam_<camera_number> serial_no:=<camera_serial_number>
+    roslaunch realsense2_camera rs_camera.launch camera:=cam_4 serial_no:=843212070304
+
     ```
 2. Use the following command to run the AR-tracker (we used a 4.4 cm AR tracker in the official implementation):
    ```
    rosrun ar_track_alvar individualMarkersNoKinect 4.4 0.04 0.04 /cam_<camera_number>/color/image_raw /cam_<camera_number>/color/camera_info cam_<camera_number>_link __name:=cam_<camera_number>_ar_tracker
+   rosrun ar_track_alvar individualMarkersNoKinect 4.4 0.04 0.04 /cam_4/color/image_raw /cam_4/color/camera_info cam_4_link __name:=cam_4_ar_tracker
    ```
 
 You can get the data from the camera stream and AR trackers stream from the respective ROS topics: `/cam_<camera_number>/color/image_raw` and `/visualization_marker`.
